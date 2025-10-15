@@ -3,8 +3,9 @@
 int speed = 300;
 // int speed = 400;
 
-//start program with lowest difficulty
+//game start difficulty
 int difficulty = 1;
+//winning round difficulty
 int maxdifficulty = 5;
 
 #include <avr/io.h>
