@@ -12,8 +12,8 @@ void loop() {
   // read a0 photocell sensor
   int photocell = analogRead(A0);
 
-  // 150 for full dark, hand on photocell, 600 for bright room
   // map photocell 150-600 to number of leds, scale 0-4
+  // 150 for full dark, hand on photocell, 600 for bright room
   int lightLevel = map(photocell, 150, 600, 0, 4);
   // make sure in range 0-4, anything darker just do 0, anything 
   // brighter like flashlight, just do all 4
